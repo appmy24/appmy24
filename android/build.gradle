@@ -22,15 +22,6 @@ allprojects {
     rootProject.buildDir = '../build'
 }
 
-// Добавляем следующий блок кода здесь
-android {
-    defaultConfig {
-        ...
-        buildConfigField("String", "GCLOUD_SERVICE_ACCOUNT_CREDENTIALS", "\"android/app/key.json\"")
-        ...
-    }
-}
-
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
