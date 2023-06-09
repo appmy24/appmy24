@@ -32,6 +32,15 @@ subprojects {
 //    project.evaluationDependsOn(':app')
 //}
 
+// Добавляем следующий блок кода
+android {
+    defaultConfig {
+        ...
+        buildConfigField("String", "GCLOUD_SERVICE_ACCOUNT_CREDENTIALS", "\"android/app/key.json\"")
+        ...
+    }
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
