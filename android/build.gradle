@@ -15,6 +15,7 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+        jcenter()
 
         // Add the following line to include Google Maven Repository
         maven {
