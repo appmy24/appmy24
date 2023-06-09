@@ -20,17 +20,14 @@ allprojects {
         }
     }
     rootProject.buildDir = '../build'
-    subprojects {
-        project.buildDir = "${rootProject.buildDir}/${project.name}"
-        
-        // Добавляем следующий блок кода здесь
-        android {
-            defaultConfig {
-                ...
-                buildConfigField("String", "GCLOUD_SERVICE_ACCOUNT_CREDENTIALS", "\"android/app/key.json\"")
-                ...
-            }
-        }
+}
+
+// Добавляем следующий блок кода здесь
+android {
+    defaultConfig {
+        ...
+        buildConfigField("String", "GCLOUD_SERVICE_ACCOUNT_CREDENTIALS", "\"android/app/key.json\"")
+        ...
     }
 }
 
