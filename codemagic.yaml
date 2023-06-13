@@ -9,6 +9,7 @@ build:
     environment:
     groups:
       - google_play_credentials
+      - google_play
       vars:
         FCI_KEYSTORE_PATH: /tmp/keystore.keystore
         FCI_KEYSTORE: /signs/test.jks
@@ -16,6 +17,7 @@ build:
         FCI_KEY_PASSWORD: password
         FCI_KEY_ALIAS: test
         PACKAGE_NAME: "io.sitenative.app.prod_app"
+        GOOGLE_PLAY_TRACK: alpha
         APP_UID: "test_uid"
       flutter: stable
       xcode: latest
